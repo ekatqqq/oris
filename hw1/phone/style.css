@@ -24,9 +24,8 @@
   }
 
   .top-block {
-    align-self: center;
-    margin: 20px;
     align-self: flex-end;
+    margin: 20px;
   }
 
   .degrees{
@@ -124,7 +123,7 @@
     display: flex;
     align-items: center;
     gap: 25px;
-    margin: 30px;
+    margin: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
