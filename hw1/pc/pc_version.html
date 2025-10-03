@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> necvetaeva - hw1 </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-block">
+    <div class="degrees"> 36° </div>
+    <div class="city"> Ahmedabad </div>
+  </div>
+
+  <div class="center-block">
+    <div class="center-block-text">
+
+      <div class="time-container">
+        <div class="time" id="current-time">09:11:01</div>
+      </div>
+      <script>
+        function updateTime() {
+          const now = new Date();
+          document.getElementById('current-time').textContent = now.toLocaleTimeString('ru-RU');
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+      </script>
+
+      <div class="hi"> Good Morning, Saad. </div>
+    </div>
+
+    <div class="center-block-search">
+
+      <div class="container-search">
+        <div class="search-icon"><img src="../icons/search-01.svg" alt="Loupe"></div>
+        <div class="search-text">Search</div>
+      </div>
+
+      <div class="icon">
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="../icons/youtube.png" alt="Youtube"> </a>
+        <a href="https://www.chatgpt.com/" target="_blank">
+          <img src="../icons/gpt.png" alt="ChatGPT"> </a>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">
+          <img src="../icons/gg.png" alt="GG"> </a>
+        <a href="https://www.github.com" target="_blank">
+          <img src="../icons/github.png" alt="Github"> </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="../icons/in.png" alt="IN"> </a>
+        <img src="../icons/plus.png" alt="plus">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

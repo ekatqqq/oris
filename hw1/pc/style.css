@@ -1,0 +1,121 @@
+@font-face{
+  font-family: 'Afacad';
+  src: url('../fonts/Afacad-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-block{
+  margin: 35px;
+  align-self: flex-end;
+}
+
+.degrees{
+  font-family: 'Afacad', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 32px;
+  color: #212121;
+}
+
+.city{
+  font-family: 'Afacad', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #6E6CDF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.center-block{
+  height: 90vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-block-text{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-container {
+  position: relative;
+  font-family: 'Afacad', sans-serif;
+  font-size: 74px;
+  text-align: center;
+}
+
+.time {
+  color: #212121;
+  font-weight: bold;
+}
+
+.hi{
+  position: relative;
+  font-family: 'Afacad', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  color: #6E6CDF;
+}
+
+.center-block-search{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+}
+
+.container-search{
+  border-radius: 18px;
+  width: 621px;
+  height: 65px;
+  background-color: #FAFAFA;
+  border: 1px solid #EEEEEE;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon{
+  margin: 15px;
+  display: inline-block;
+}
+
+.search-text{
+  font-family: 'Poppins', sans-serif;
+  color: #9E9E9E;
+  display: inline-block;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.icon{
+  display: flex;
+  gap: 43px;
+  align-items: center;
+  margin: 60px;
+}
