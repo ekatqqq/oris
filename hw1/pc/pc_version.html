@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> necvetaeva - hw1 </title>
+  <title> necvetaeva - hw1.1 </title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,7 +27,24 @@
         setInterval(updateTime, 1000);
       </script>
 
-      <div class="hi"> Good Morning, Saad. </div>
+      <div class="hi" id="greeting"> Hi, Saad. </div>
+      <script>
+        function updateGreeting() {
+          const now = new Date();
+          const hour = now.getHours();
+          const greetingElement = document.getElementById('greeting');
+          let greeting;
+
+          if (hour >= 5 && hour < 12) greeting = "Good Morning, Saad.";
+          else if (hour >= 12 && hour < 18) greeting = "Good Afternoon, Saad.";
+          else if (hour >= 18 && hour < 22) greeting = "Good Evening, Saad.";
+          else greeting = "Good Night, Saad.";
+
+          greetingElement.textContent = greeting;
+        }
+        updateGreeting();
+        setInterval(updateGreeting, 60000);
+      </script>
     </div>
 
     <div class="center-block-search">
