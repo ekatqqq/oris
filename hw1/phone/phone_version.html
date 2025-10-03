@@ -2,9 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>necvetaeva - hw1.2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> necvetaeva - hw1.2 </title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+<div class="top-block">
+  <div class="degrees"> 36° </div>
+  <div class="city"> Ahmedabad </div>
+</div>
+
+<div class="center-block">
+  <div class="center-block-text">
+    <div class="time-container">
+      <div class="time" id="current-time">09:11:01</div>
+      <script>
+        function updateTime() {
+          const now = new Date();
+          document.getElementById('current-time').textContent = now.toLocaleTimeString('ru-RU');
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+      </script>
+    </div>
+
+    <div class="hi" id="greeting"> Good Morning, Saad. </div>
+    <script>
+      function updateGreeting() {
+        const now = new Date();
+        const hour = now.getHours();
+        const greetingElement = document.getElementById('greeting');
+        let greeting;
+
+        if (hour >= 5 && hour < 12) greeting = "Good Morning, Saad.";
+        else if (hour >= 12 && hour < 18) greeting = "Good Afternoon, Saad.";
+        else if (hour >= 18 && hour < 22) greeting = "Good Evening, Saad.";
+        else greeting = "Good Night, Saad.";
+
+        greetingElement.textContent = greeting;
+      }
+      updateGreeting();
+      setInterval(updateGreeting, 60000);
+    </script>
+  </div>
+
+  <div class="center-block-search">
+    <div class="container-search">
+      <div class="search-icon">
+        <img src="../icons/search-01.svg" alt="Loupe">
+      </div>
+      <div class="search-text">Search</div>
+    </div>
+
+    <div class="icon">
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="../icons/youtube.png" alt="Youtube">
+      </a>
+      <a href="https://www.chatgpt.com/" target="_blank">
+        <img src="../icons/gpt.png" alt="ChatGPT">
+      </a>
+      <a href="https://www.geeksforgeeks.org/" target="_blank">
+        <img src="../icons/gg.png" alt="GG">
+      </a>
+      <a href="https://www.github.com" target="_blank">
+        <img src="../icons/github.png" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <img src="../icons/in.png" alt="IN">
+      </a>
+      <img src="../icons/plus.png" alt="plus">
+    </div>
+  </div>
+</div>
 </body>
 </html>
